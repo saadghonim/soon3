@@ -1,0 +1,229 @@
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal-ExtraLight.woff2') format('woff2'),
+  url('../fonts/Tajawal-ExtraLight.woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal-Light.woff2') format('woff2'),
+  url('../fonts/Tajawal-Light.woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal-Regular.woff2') format('woff2'), 
+  url('../fonts/Tajawal-Regular.woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal-Medium.woff2') format('woff2'), 
+  url('../fonts/Tajawal-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal-Bold.woff2') format('woff2'), 
+  url('../fonts/Tajawal-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal-ExtraBold.woff2') format('woff2'), 
+  url('../fonts/Tajawal-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal-Black.woff2') format('woff2'), 
+  url('../fonts/Tajawal-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+		overflow:hidden;
+	}
+
+canvas {
+    overflow: hidden;
+}
+
+.position_div{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+}
+.logo{
+  text-align: center;
+}
+
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.item {
+  text-align: center;
+  padding:0 30px;
+  color: #ffffff;
+  width: 145px;
+}
+
+.num {
+  font-family: "Tajawal";
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.counter {
+  font-family: "Tajawal";
+  font-weight: 600;
+  font-size: 30px;
+  color: rgb(244, 134, 66);
+}
+
+
+@media (max-width: 567px) {
+  .container {
+    width: 100%;
+    height: auto;
+    padding-top: 0;
+  }
+  .counter{
+    font-size: 20px;
+  }
+  .content {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item {
+    padding: 0 10px;
+    width: 85px;
+    
+  }
+  .num{
+    font-size: 40px;
+  }
+}
+
+/* text animation  */
+
+
+
+
+
+.text-anim h1 {
+  color: white;
+  font-family: "Tajawal";
+  font-size: 70px;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+}
+.text-anim h1 b {
+          -webkit-animation: text-shadow 8s ease infinite;
+          animation: text-shadow 8s ease infinite;
+          font-weight: normal;
+}
+.text-anim h1 b:nth-of-type(1) {
+  -webkit-animation-delay: 140ms;
+          animation-delay: 140ms;
+}
+.text-anim h1 b:nth-of-type(2) {
+  -webkit-animation-delay: 280ms;
+          animation-delay: 280ms;
+}
+.text-anim h1 b:nth-of-type(3) {
+  -webkit-animation-delay: 420ms;
+          animation-delay: 420ms;
+}
+.text-anim h1 b:nth-of-type(4) {
+  -webkit-animation-delay: 560ms;
+          animation-delay: 560ms;
+}
+.text-anim h1 b:nth-of-type(5) {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+.text-anim h1 b:nth-of-type(6) {
+  -webkit-animation-delay: 840ms;
+          animation-delay: 840ms;
+}
+
+@-webkit-keyframes text-shadow {
+  0% {
+    color: white;
+    text-shadow: 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px rgb(255, 255, 255);
+  }
+  15% {
+    text-shadow: -1px 1px 6px rgb(255, 255, 255), -3px 3px 16px rgb(255, 255, 255), -8px 8px 26px rgb(255, 255, 255), -16px 16px 36px rgb(255, 255, 255);
+  }
+  40% {
+    color: white;
+    text-shadow: 5px 5px 14px rgb(255, 255, 255), 10px 10px 22px rgb(255, 255, 255), 20px 20px 40px rgb(255, 255, 255), 30px 30px 52px rgb(255, 255, 255);
+  }
+  55%, 80% {
+    color: rgb(244, 134, 66);
+    text-shadow: 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px rgb(255, 255, 255);
+  }
+  90% {
+    color: white;
+  }
+}
+
+@keyframes text-shadow {
+  0% {
+    color: rgb(244, 134, 66);
+    text-shadow: 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  15% {
+    text-shadow: -1px 1px 6px rgb(248, 247, 247), -3px 3px 16px rgba(0, 0, 0, 0.2), -8px 8px 26px rgba(0, 0, 0, 0.2), -16px 16px 36px rgba(0, 0, 0, 0.2);
+  }
+  40% {
+    color: rgb(244, 134, 66);
+    text-shadow: 5px 5px 4px rgb(243, 236, 236), 10px 10px 22px rgba(0, 0, 0, 0.3), 20px 20px 40px rgba(0, 0, 0, 0.3), 30px 30px 52px rgba(0, 0, 0, 0.3);
+  }
+  55%, 80% {
+    color: rgb(244, 134, 66);
+    text-shadow: 0px 0px 0px rgb(255, 255, 255), 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  90% {
+    color: white;
+  }
+}
+
+@media(max-width:767px){
+  .text-anim h1{
+    font-size: 40px;
+  }
+}
