@@ -16,6 +16,7 @@
 </head>
 
 <body>
+  <div id="background"><canvas id="stars"></canvas></div>
 
   <div class="position_div">
     <div class="logo">
@@ -53,10 +54,14 @@
     <div class="text-anim">
 
       
-      <h1>
-  
-        <b>انتظرونا </b>
-        <b>قريبا..</b>
+
+      <h1 class="ml8">
+        <span class="letters-container">
+          <span class="letters letters-left">انتظرونا</span>
+          <span class="letters bang">قريبا..</span>
+        </span>
+        <span class="circle circle-dark"></span>
+        <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
       </h1>
 
 
@@ -64,13 +69,59 @@
 
 
 
-
-
-  </div>
+    <ul>
+      <li>
+          <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fab fa-facebook-f"/>
+          </a>
+      </li>
+      <li>
+          <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fab fa-whatsapp" />
+          </a>
+      </li>
+      <li>
+          <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fab fa-twitter"/>
+          </a>
+      </li>
+      <li>
+          <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fab fa-instagram" />
+          </a>
+      </li>
+      <li>
+          <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fab fa-snapchat-ghost"/>
+          </a>
+      </li>
+  </ul>
+    </div>
 
 
 
     <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
