@@ -74,7 +74,7 @@
 }
 
 #background {
-  background: radial-gradient(at bottom right, #32577a 25%, #05363b 55%, #000000 90%); 
+  background: radial-gradient(at bottom right, #32577a 25%, #d4fcff  55%, #000000 90%); 
 }
 
 
@@ -90,8 +90,11 @@
 }
 .logo{
   text-align: center;
+  padding-top:50px;
 }
-
+.logo img {
+  width: 350px;
+}
 
 .content {
   display: flex;
@@ -102,7 +105,7 @@
 .item {
   text-align: center;
   padding:0 30px;
-  color: #ffffff;
+  color: #3a4348;
   width: 145px;
 }
 
@@ -116,7 +119,7 @@
   font-family: "Tajawal";
   font-weight: 600;
   font-size: 20px;
-  color: rgb(168 132 56);
+  color: #4a7dbf;
 }
 
 
@@ -141,13 +144,16 @@
   .num{
     font-size: 40px;
   }
+  .logo img {
+    width: 200px;
+  }
 }
 
 /* text animation  */
 
 
 h1.ml8 {
-  color: white;
+  color: #3a4348;
   font-family: "Tajawal";
   font-size: 40px;
   text-align: center;
@@ -210,7 +216,7 @@ ul li span
     display: flex !important;
     align-items: center;
     justify-content: center;
-    color: rgb(168, 132, 56);
+    color: #3a4348;
     font-size: 20px !important;
 }
 
